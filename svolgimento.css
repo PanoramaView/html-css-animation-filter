@@ -101,23 +101,27 @@
 }
 @keyframes movetop13 {
     0% {
-        left: -10%;
+        left: calc(0% - 60px);
     }
-    25% {
+    30% {
         top: -10px;
-        left: calc(100% - 60px);
+        left: 100%;
     }
     50%{
         top: 60px;
-        left: calc(100%)
+        left: 100%;
     }
-    75%{
+    80%{
         top: 60px;
-        left: -10%;
+        left: calc(0% - 60px);
     }
-    0% {
-        left: -10%;
+    100% {
+        top: -10px;
+        left: calc(0% - 60px);
     }
+}
+.well{
+    overflow: hidden;
 }
 .ex-13-bottom-white{
     right: 0%;
@@ -125,24 +129,22 @@
 }
 @keyframes movebot13 {
     0% {
-        right: 0%;
+        right: -60px;
     }
-    25% {
-        right: calc(100% - 20px);
+    30% {
+        right: calc(100% - 5px);
         bottom: -10px;
     }
     50%{
-        width: 20px;
         right: calc(100% - 5px);
         bottom: 50px;
     }
-    75%{
-        width: 60px;
+    80%{
         right: calc(0% - 50px);
         bottom: 50px;
     }
     100% {
-        right: 0%;
+        right: -60px;
         bottom: -10px;
     }
 }
